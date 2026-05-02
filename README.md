@@ -28,7 +28,7 @@ The drone used in this project is the DJI Ryze Tello. It includes a vision‑pos
 
 ## Project Overview 
 
-- Create a virtual replica of the tree eenvironemntes living room, tairs and room.
+- Create a virtual replica of the tree environemntes living room, stairs and room.
 
 - Train a virtual drone using reinforcement learning, allowing it to learn movement, stability, and navigation behaviours through interaction with the simulated environment.
 
@@ -38,6 +38,17 @@ The drone used in this project is the DJI Ryze Tello. It includes a vision‑pos
 
 - ![](/assets/drone_rl_sim_to_real_pipeline.svg)
 
-## Tools
+## Progress 
+### 1. Photogrametry and 3D environment creation
 
+The goal is to generate realistic 3D environments that match the real world as closely as possible. I’m currently testing four options:
 
+- Polycam: Produces good results, but not quite accurate enough for reliable drone‑training environments.
+
+- Scanniverse: Decent and free, but the scene ends up heavily distorted.
+
+- COLMAP: I’m facing issues importing the images into the scene, the workflow is quite tricky.
+
+- RealityScan: So far, the app delivering the best results.
+
+![image](/assets/image.png)
